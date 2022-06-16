@@ -39,7 +39,24 @@ body{
   height: 5px;
 }
 
+#splide1 .splide__arrow {
+  border-radius: unset;
+  background: unset;
+}
 
+#splide1 .splide__arrows .splide__arrow--prev {
+  left: calc(50% - 300px);
+}
+
+#splide1 .splide__arrows .splide__arrow--next {
+  right: calc(50% - 300px);
+}
+
+@media (max-width: 800px) {
+  #splide1 .splide__arrow {
+    display: none;
+  }
+}
 
 
 
@@ -81,4 +98,25 @@ body{
   border-radius: 20px;
   width: 18px;
   height: 5px;
+}
+
+#splide2 .splide__arrow {
+  border-radius: unset;
+  background: unset;
+}
+
+@media (max-width: 800px) {
+  #splide2 .splide__arrow {
+    display: none;
+  }
+}
+
+@media (min-width: 1251px) {
+  #splide2 .splide__arrows .splide__arrow--prev {
+    left: calc(50% - 600px);
+  }
+  
+  #splide2 .splide__arrows .splide__arrow--next {
+    right: calc(50% - 600px);
+  }
 }
